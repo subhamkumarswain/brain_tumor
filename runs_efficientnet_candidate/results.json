@@ -1,0 +1,8 @@
+{
+  "efficientnet_b0": {
+    "best_epoch": 2,
+    "validation_macro_f1": 0.8548631535947712,
+    "checkpoint": "runs_efficientnet_candidate\\efficientnet_b0_best.pt"
+  },
+  "selected_model": "efficientnet_b0"
+}

@@ -1,0 +1,150 @@
+{
+  "protocol": "StratifiedGroupKFold; frozen ImageNet CNN features; train/validation patients only",
+  "class_names": [
+    "glioma",
+    "meningioma",
+    "pituitary"
+  ],
+  "patient_counts_by_class": {
+    "glioma": 76,
+    "meningioma": 70,
+    "pituitary": 53
+  },
+  "fold_count": 5,
+  "models": {
+    "resnet18": {
+      "folds": [
+        {
+          "fold": 1,
+          "validation_patients": 39,
+          "validation_images": 519,
+          "accuracy": 0.7302504816955684,
+          "macro_f1": 0.7216982497697065
+        },
+        {
+          "fold": 2,
+          "validation_patients": 40,
+          "validation_images": 520,
+          "accuracy": 0.8923076923076924,
+          "macro_f1": 0.8830454658351737
+        },
+        {
+          "fold": 3,
+          "validation_patients": 40,
+          "validation_images": 519,
+          "accuracy": 0.861271676300578,
+          "macro_f1": 0.8373803763604956
+        },
+        {
+          "fold": 4,
+          "validation_patients": 40,
+          "validation_images": 525,
+          "accuracy": 0.8666666666666667,
+          "macro_f1": 0.8600918439096624
+        },
+        {
+          "fold": 5,
+          "validation_patients": 40,
+          "validation_images": 524,
+          "accuracy": 0.8301526717557252,
+          "macro_f1": 0.8132764955515647
+        }
+      ],
+      "mean_macro_f1": 0.8230984862853206,
+      "std_macro_f1": 0.0623389940506518,
+      "mean_accuracy": 0.8361298377452461,
+      "std_accuracy": 0.06317975518415404
+    },
+    "efficientnet_b0": {
+      "folds": [
+        {
+          "fold": 1,
+          "validation_patients": 39,
+          "validation_images": 519,
+          "accuracy": 0.7822736030828517,
+          "macro_f1": 0.7595471443201803
+        },
+        {
+          "fold": 2,
+          "validation_patients": 40,
+          "validation_images": 520,
+          "accuracy": 0.8865384615384615,
+          "macro_f1": 0.8757769330940063
+        },
+        {
+          "fold": 3,
+          "validation_patients": 40,
+          "validation_images": 519,
+          "accuracy": 0.9036608863198459,
+          "macro_f1": 0.892782397965164
+        },
+        {
+          "fold": 4,
+          "validation_patients": 40,
+          "validation_images": 525,
+          "accuracy": 0.9333333333333333,
+          "macro_f1": 0.9229070340181451
+        },
+        {
+          "fold": 5,
+          "validation_patients": 40,
+          "validation_images": 524,
+          "accuracy": 0.8625954198473282,
+          "macro_f1": 0.8516384539545143
+        }
+      ],
+      "mean_macro_f1": 0.860530392670402,
+      "std_macro_f1": 0.06212925487992066,
+      "mean_accuracy": 0.8736803408243641,
+      "std_accuracy": 0.0572291688507549
+    },
+    "densenet121": {
+      "folds": [
+        {
+          "fold": 1,
+          "validation_patients": 39,
+          "validation_images": 519,
+          "accuracy": 0.7649325626204239,
+          "macro_f1": 0.7347770180326175
+        },
+        {
+          "fold": 2,
+          "validation_patients": 40,
+          "validation_images": 520,
+          "accuracy": 0.8134615384615385,
+          "macro_f1": 0.8151178012366093
+        },
+        {
+          "fold": 3,
+          "validation_patients": 40,
+          "validation_images": 519,
+          "accuracy": 0.8323699421965318,
+          "macro_f1": 0.8172426100100774
+        },
+        {
+          "fold": 4,
+          "validation_patients": 40,
+          "validation_images": 525,
+          "accuracy": 0.900952380952381,
+          "macro_f1": 0.8904451475413685
+        },
+        {
+          "fold": 5,
+          "validation_patients": 40,
+          "validation_images": 524,
+          "accuracy": 0.8530534351145038,
+          "macro_f1": 0.8466655702749354
+        }
+      ],
+      "mean_macro_f1": 0.8208496294191217,
+      "std_macro_f1": 0.05693056696362264,
+      "mean_accuracy": 0.8329539718690758,
+      "std_accuracy": 0.05008737422642833
+    }
+  },
+  "ranked_by_mean_macro_f1": [
+    "efficientnet_b0",
+    "resnet18",
+    "densenet121"
+  ]
+}

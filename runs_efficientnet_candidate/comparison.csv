@@ -1,0 +1,2 @@
+model,best_epoch,validation_macro_f1,test_accuracy,test_macro_f1
+efficientnet_b0,2,0.8548631535947712,,

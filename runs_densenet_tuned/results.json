@@ -1,0 +1,8 @@
+{
+  "densenet121": {
+    "best_epoch": 4,
+    "validation_macro_f1": 0.9340633480040296,
+    "checkpoint": "runs_densenet_tuned\\densenet121_best.pt"
+  },
+  "selected_model": "densenet121"
+}

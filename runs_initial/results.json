@@ -1,0 +1,183 @@
+{
+  "resnet18": {
+    "best_epoch": 3,
+    "validation_macro_f1": 0.8790634521680776,
+    "checkpoint": "runs_initial\\resnet18_best.pt",
+    "test": {
+      "loss": 0.33152377361297214,
+      "accuracy": 0.9080962800875274,
+      "macro_f1": 0.8986817487415145,
+      "classification_report": {
+        "glioma": {
+          "precision": 0.9587155963302753,
+          "recall": 0.920704845814978,
+          "f1-score": 0.9393258426966292,
+          "support": 227.0
+        },
+        "meningioma": {
+          "precision": 0.7461538461538462,
+          "recall": 0.9326923076923077,
+          "f1-score": 0.8290598290598291,
+          "support": 104.0
+        },
+        "pituitary": {
+          "precision": 1.0,
+          "recall": 0.8650793650793651,
+          "f1-score": 0.9276595744680851,
+          "support": 126.0
+        },
+        "accuracy": 0.9080962800875274,
+        "macro avg": {
+          "precision": 0.9016231474947071,
+          "recall": 0.9061588395288837,
+          "f1-score": 0.8986817487415145,
+          "support": 457.0
+        },
+        "weighted avg": {
+          "precision": 0.921725252444141,
+          "recall": 0.9080962800875274,
+          "f1-score": 0.9110159625762271,
+          "support": 457.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          209,
+          18,
+          0
+        ],
+        [
+          7,
+          97,
+          0
+        ],
+        [
+          2,
+          15,
+          109
+        ]
+      ]
+    }
+  },
+  "efficientnet_b0": {
+    "best_epoch": 3,
+    "validation_macro_f1": 0.8868243096860647,
+    "checkpoint": "runs_initial\\efficientnet_b0_best.pt",
+    "test": {
+      "loss": 0.33642271376282173,
+      "accuracy": 0.8905908096280087,
+      "macro_f1": 0.8829630769654168,
+      "classification_report": {
+        "glioma": {
+          "precision": 0.9615384615384616,
+          "recall": 0.8810572687224669,
+          "f1-score": 0.9195402298850575,
+          "support": 227.0
+        },
+        "meningioma": {
+          "precision": 0.708029197080292,
+          "recall": 0.9326923076923077,
+          "f1-score": 0.8049792531120332,
+          "support": 104.0
+        },
+        "pituitary": {
+          "precision": 0.9821428571428571,
+          "recall": 0.873015873015873,
+          "f1-score": 0.9243697478991597,
+          "support": 126.0
+        },
+        "accuracy": 0.8905908096280087,
+        "macro avg": {
+          "precision": 0.8839035052538703,
+          "recall": 0.8955884831435492,
+          "f1-score": 0.8829630769654168,
+          "support": 457.0
+        },
+        "weighted avg": {
+          "precision": 0.90952793712381,
+          "recall": 0.8905908096280087,
+          "f1-score": 0.8948010125664194,
+          "support": 457.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          200,
+          25,
+          2
+        ],
+        [
+          7,
+          97,
+          0
+        ],
+        [
+          1,
+          15,
+          110
+        ]
+      ]
+    }
+  },
+  "densenet121": {
+    "best_epoch": 3,
+    "validation_macro_f1": 0.9149201083788623,
+    "checkpoint": "runs_initial\\densenet121_best.pt",
+    "test": {
+      "loss": 0.3699579580974331,
+      "accuracy": 0.8687089715536105,
+      "macro_f1": 0.8633832836526792,
+      "classification_report": {
+        "glioma": {
+          "precision": 0.9947089947089947,
+          "recall": 0.8281938325991189,
+          "f1-score": 0.9038461538461539,
+          "support": 227.0
+        },
+        "meningioma": {
+          "precision": 0.6415094339622641,
+          "recall": 0.9807692307692307,
+          "f1-score": 0.7756653992395437,
+          "support": 104.0
+        },
+        "pituitary": {
+          "precision": 0.981651376146789,
+          "recall": 0.8492063492063492,
+          "f1-score": 0.9106382978723404,
+          "support": 126.0
+        },
+        "accuracy": 0.8687089715536105,
+        "macro avg": {
+          "precision": 0.8726232682726827,
+          "recall": 0.8860564708582329,
+          "f1-score": 0.8633832836526792,
+          "support": 457.0
+        },
+        "weighted avg": {
+          "precision": 0.9107308453512312,
+          "recall": 0.8687089715536105,
+          "f1-score": 0.8765485863805347,
+          "support": 457.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          188,
+          38,
+          1
+        ],
+        [
+          1,
+          102,
+          1
+        ],
+        [
+          0,
+          19,
+          107
+        ]
+      ]
+    }
+  },
+  "selected_model": "densenet121"
+}

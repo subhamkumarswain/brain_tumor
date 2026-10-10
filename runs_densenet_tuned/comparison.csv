@@ -1,0 +1,2 @@
+model,best_epoch,validation_macro_f1,test_accuracy,test_macro_f1
+densenet121,4,0.9340633480040296,,
